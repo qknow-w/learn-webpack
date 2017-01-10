@@ -1,4 +1,4 @@
-# webpack学习
+# 半小时学会webpack
 
 
 学习webpack，只需要记得一句话，**一切皆模块**
@@ -43,7 +43,7 @@ Webpack 是当下最热门的前端资源模块化管理和打包工具。它可
 
 3. 在当前项目中新建两个空的文件夹**src**文件夹和build文件夹,src文件夹用来存放原始数据和我们将写的JavaScript模块，build文件夹用来存放准备给浏览器读取的数据（包括使用webpack生成的打包后的js文件以及一个index.html文件）。在这里还需要创建三个文件，index.html 文件放在src文件夹中，两个个js文件（main.js和module.js）放在src文件夹中，此时项目结构结构如下
 
-	
+
 		learn-webpack
 			build
 				index.html
@@ -272,7 +272,7 @@ Babel其实是一个编译JavaScript的平台，它的强大之处表现在可�
 
 	{
 	  "presets": ["react", "es2015"]
-	}	
+	}
 
 2.3 安装 `react`
 
@@ -314,15 +314,15 @@ Babel其实是一个编译JavaScript的平台，它的强大之处表现在可�
 	import React from 'react';
 	import {render} from 'react-dom';
 	import Module from './module';
-	
+
 	render(<Module />, document.getElementById('app'));
 
 
 `module.js`
-	
+
 	import React, {Component} from 'react'
 	import config from './config.json';
-	
+
 	class Module extends Component{
 	  render() {
 	    return (
@@ -332,7 +332,7 @@ Babel其实是一个编译JavaScript的平台，它的强大之处表现在可�
 	    );
 	  }
 	}
-	
+
 	export default Module
 
 
@@ -398,7 +398,7 @@ webpack提供两个`loader`处理样式表，css-loader 和 style-loader，二�
 	  padding: 0;
 	  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	}
-	
+
 	body {
 	  color: red;
 	  font-size: 30px;
@@ -409,9 +409,9 @@ webpack提供两个`loader`处理样式表，css-loader 和 style-loader，二�
 	import React from 'react';
 	import {render} from 'react-dom';
 	import Module from './module';
-	
+
 	import './main.css';//使用import导入css文件
-	
+
 	render(<Module />, document.getElementById('app'));
 
 
@@ -437,7 +437,7 @@ webpack提供两个`loader`处理样式表，css-loader 和 style-loader，二�
 修改 webpack.config.js，添加 plugins：
 
 	var webpack = require('webpack');
-	
+
 	module.exports = {
 	  entry: __dirname + "/src/main.js", //已多次提及的唯一入口文件
 	  output: {
@@ -513,9 +513,9 @@ webpack提供两个`loader`处理样式表，css-loader 和 style-loader，二�
 
 	var webpack = require('webpack');
 	var HtmlWebpackPlugin = require('html-webpack-plugin');
-	
-	
-	
+
+
+
 	module.exports = {
 	  entry: __dirname + "/src/main.js", //已多次提及的唯一入口文件
 	  output: {
@@ -605,8 +605,8 @@ webpack提供两个`loader`处理样式表，css-loader 和 style-loader，二�
 	var webpack = require('webpack');
 	var HtmlWebpackPlugin = require('html-webpack-plugin');
 	var ExtractTextPlugin = require('extract-text-webpack-plugin');
-	
-	
+
+
 	module.exports = {
 	  entry: __dirname + "/src/main.js", //已多次提及的唯一入口文件
 	  output: {
