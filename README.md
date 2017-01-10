@@ -1,4 +1,4 @@
-# webpack学习
+# 半小时学会webpack
 
 
 学习webpack，只需要记得一句话，**一切皆模块**
