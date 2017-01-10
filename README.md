@@ -41,7 +41,7 @@ Webpack 是当下最热门的前端资源模块化管理和打包工具。它可
 		// 安装Webpack
 		npm install webpack -g
 
-3 在当前项目中新建两个空的文件夹**src**文件夹和**build**文件夹,**src**文件夹用来存放原始数据和我们将写的JavaScript模块，**build**文件夹用来存放浏览器访问的页面。在这里还需要创建三个文件，`index.html` 文件放在src文件夹中，两个个js文件（`main.js`和`module.js`）放在**src**文件夹中，此时项目结构结构如下
+3 在当前项目中新建两个空的文件夹**src**文件夹和**build**文件夹,**src**文件夹用来存放原始数据和我们将写的JavaScript模块，**build**文件夹用来存放浏览器访问的页面。在这里还需要创建三个文件，`index.html` 文件放在build文件夹中，两个js文件（`main.js`和`module.js`）放在**src**文件夹中，此时项目结构结构如下
 
 
 		learn-webpack
