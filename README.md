@@ -311,7 +311,7 @@ Babel其实是一个编译JavaScript的平台，它的强大之处表现在可�
 
 2.1 安装
 
-	npm install babel-loader babel-core babel-preset-es2015 webpack --save-dev
+	npm install babel-loader  babel-core babel-preset-react babel-preset-es2015 webpack --save-dev
 
 2.2 添加`.babelrc`
 
