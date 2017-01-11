@@ -172,7 +172,7 @@ Webpack 是当下最热门的前端资源模块化管理和打包工具。它可
 
 	///webpack.config.js
 	module.exports = {
-	  devtool: 'eval-source-map',//配置生成Source Maps，选择合适的选项
+	  devtool: 'source-map',//配置生成Source Maps，选择合适的选项
 	  entry:  __dirname + "/src/main.js",//已多次提及的唯一入口文件
 	  output: {
 	    path: __dirname + "/build",//打包后的文件存放的地方
@@ -212,7 +212,7 @@ Webpack 是当下最热门的前端资源模块化管理和打包工具。它可
 修改webpack.config.js
 
 	module.exports = {
-	  devtool: 'eval-source-map',//配置生成Source Maps，选择合适的选项
+	  devtool: 'source-map',//配置生成Source Maps，选择合适的选项
 	  entry: __dirname + "/src/main.js", //已多次提及的唯一入口文件
 	  output: {
 	    path: __dirname + "/build", //打包后的文件存放的地方
@@ -250,7 +250,7 @@ Loaders需要单独安装并且需要在`webpack.config.js`下的`modules`关键
 修改webpack.config.js中的`module`
 
 	module.exports = {
-      devtool: 'eval-source-map',//配置生成Source Maps，选择合适的选项
+    devtool: 'source-map',//配置生成Source Maps，选择合适的选项
 	  entry: __dirname + "/src/main.js", //已多次提及的唯一入口文件
 	  output: {
 	    path: __dirname + "/build", //打包后的文件存放的地方
@@ -326,7 +326,7 @@ Babel其实是一个编译JavaScript的平台，它的强大之处表现在可�
 修改webpack.config.js中的`module`
 
 	module.exports = {
-	  devtool: 'eval-source-map',//配置生成Source Maps，选择合适的选项
+	  devtool: 'source-map',//配置生成Source Maps，选择合适的选项
 	  entry: __dirname + "/src/main.js", //已多次提及的唯一入口文件
 	  output: {
 	    path: __dirname + "/build", //打包后的文件存放的地方
@@ -403,7 +403,7 @@ webpack提供两个`loader`处理样式表，`css-loader` 和 `style-loader`，�
 修改`webpack.config.js`
 
 	module.exports = {
-      devtool: 'eval-source-map',//配置生成Source Maps，选择合适的选项
+    devtool: 'source-map',//配置生成Source Maps，选择合适的选项
 	  entry: __dirname + "/src/main.js", //已多次提及的唯一入口文件
 	  output: {
 	    path: __dirname + "/build", //打包后的文件存放的地方
@@ -486,7 +486,7 @@ webpack提供两个`loader`处理样式表，`css-loader` 和 `style-loader`，�
 	var webpack = require('webpack');
 
 	module.exports = {
-      devtool: 'eval-source-map',//配置生成Source Maps，选择合适的选项
+    devtool: 'source-map',//配置生成Source Maps，选择合适的选项
 	  entry: __dirname + "/src/main.js", //已多次提及的唯一入口文件
 	  output: {
 	    path: __dirname + "/build", //打包后的文件存放的地方
@@ -565,7 +565,7 @@ webpack提供两个`loader`处理样式表，`css-loader` 和 `style-loader`，�
 
 
 	module.exports = {
-      devtool: 'eval-source-map',//配置生成Source Maps，选择合适的选项
+    devtool: 'source-map',//配置生成Source Maps，选择合适的选项
 	  entry: __dirname + "/src/main.js", //已多次提及的唯一入口文件
 	  output: {
 	    path: __dirname + "/build", //打包后的文件存放的地方
